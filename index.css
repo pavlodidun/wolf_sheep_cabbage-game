@@ -6,11 +6,11 @@
 
 :root {
     --text-font-family: 'Fuzzy Bubbles';
-    --time-font-family: 'IBM Plex Mono';
+    --text-print-font-family: 'IBM Plex Mono';
 }
 
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
 }

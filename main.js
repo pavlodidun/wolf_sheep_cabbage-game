@@ -9,3 +9,4 @@ link.addEventListener('click', function () {
 closeBtn.addEventListener('click', function () {
     modal.style.display = 'none'; 
 });
+

@@ -31,7 +31,7 @@ span {
 }
 
 .container__start a {
-    font-family: var(--time-font-family);
+    font-family: var(--text-print-font-family);
     color: lightyellow;
     font-size: 60px;
     text-decoration: none;
