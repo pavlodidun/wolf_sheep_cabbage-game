@@ -1,7 +1,7 @@
 .container-game {
     display: flex;
     height: 100vh;
-    background-image: url("images/example.jpg");
+    background-image: url("images/game_background.jpg");
     background-size: 100% 100%;
 }
 
