@@ -1,0 +1,63 @@
+.move-boat {
+    animation-name: move;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+
+.move-reverse-boat {
+    animation-name: move-reverse;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes move {
+    from {
+        transform: translate(0);
+    }
+
+    to {
+        transform: translate(-820px, 250px);
+    }
+}
+
+@keyframes move-reverse {
+    from {
+        transform: translate(-820px, 250px);
+    }
+
+    to {
+        transform: translate(0);
+    }
+}
+
+.move-item {
+    animation-name: moving;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+
+.move-reverse-item {
+    animation-name: moving-reverse;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes moving {
+    from {
+        transform: translate(0);
+    }
+
+    to {
+        transform: translate(-820px, 250px);
+    }
+}
+
+@keyframes moving-reverse {
+    from {
+        transform: translate(-820px, 250px);
+    }
+
+    to {
+        transform: translate(0);
+    }
+}

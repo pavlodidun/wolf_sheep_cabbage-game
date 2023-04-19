@@ -12,35 +12,18 @@
 
 <body>
     <section class="container-game">
-        <div>
-            <button class="start">START</button>
-            <div class="container-game__selector">
-                <img class="container-game__airship" src="images/air-transport.png" alt="Airship">
-                <img class="container-game__boat" src="images/boat.png" alt="Boat">
-                <p class="container-game__selector-message">Choose your transport!</p>
+        <div class="transport-way">
+            <div class="transport">
+                <img id="div1" class="boat" src="images/boat.png" alt="Boat">
             </div>
-            <div class="container-game__gamepad">
-                <div class="container-game__gamepad-transport">
-                    <div id="airship-block" class="container-game__gamepad-airship-block">
-                        <img class="container-game__gamepad-airship" src="images/air-transport-man.png"
-                            alt="Airship with pilot">
-                    </div>
-                    <div id="boat-block" class="container-game__gamepad-boat-block">
-                        <img class="container-game__gamepad-boat" src="images/boat-man.png" alt="Boat with man">
-                    </div>
-                </div>
-                <div class="container-game__gamepad-images">
-                    <div class="container-game__gamepad-images-wolf-element">
-                        <img class="container-game__gamepad-images-wolf" src="images/wolf.png" alt="Wolf">
-                    </div>
-                    <div class="container-game__gamepad-images-sheep-element">
-                        <img class="container-game__gamepad-images-sheep" src="images/sheep.png" alt="Sheep">
-                    </div>
-                    <div class="container-game__gamepad-images-cabbage-element">
-                        <img class="container-game__gamepad-images-cabbage" src="images/cabbage.png" alt="Cabbage">
-                    </div>
-                </div>
-            </div>
+            <div id="div2" class="item-in"></div>
+        </div>
+        <div class="items" data-side="right">
+            <img class="wolf" src="images/wolf.png" alt="Wolf">
+            <img class="sheep" src="images/sheep2.png" alt="Sheep">
+            <img class="cabbage" src="images/cabbage2.png" alt="Cabbage">
+        </div>
+        <div id="div3" class="left-side-items" data-side="left"></div>
     </section>
     <script src="game.js"></script>
 </body>

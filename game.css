@@ -5,202 +5,58 @@
     background-size: 100% 100%;
 }
 
-.start {
-    background-color: black;
-    color: white;
-    border: none;
-    border-radius: 10px;
-    width: 250px;
-    height: 100px;
-    font-size: 50px;
-    font-weight: bold;
-    margin-top: 40px;
-    margin-left: 40px;
-}
-
-.start:hover {
-    cursor: pointer;
-    color: lightblue;
-    box-shadow: 0px 0px 4px 4px yellowgreen;
-}
-
-.container-game__selector {
+.boat {
     position: absolute;
-    top: 15%;
-    left: 31%;
-    display: flex;
-    flex-direction: column;
+    top: 510px;
+    left: 940px;
+    z-index: 10;
 }
 
-.container-game__airship {
-    padding-left: 50px;
-    width: 400px;
-    height: auto;
-}
-
-.container-game__boat {
-    padding-left: 50px;
-    width: 400px;
-    height: auto;
-}
-
-.container-game__airship:hover {
-    cursor: pointer;
-    filter: brightness(110%);
-}
-
-.container-game__boat:hover {
-    cursor: pointer;
-    filter: brightness(110%);
-}
-
-.active {
-    transform: scale(1.1);
-    filter: brightness(110%);
-}
-
-.inactive {
-    filter: brightness(50%);
-}
-
-.container-game__selector-message {
-    border: 1px solid gray;
-    background-color: white;
-    display: none;
-    font-family: var(--text-print-font-family);
-    font-size: 40px;
-    margin-top: 60px;
-}
-
-/* Gamepad */
-
-.container-game__gamepad {
-    display: none;
-}
-
-.container-game__gamepad-airship {
-    display: none;
-}
-
-.container-game__gamepad-airship {}
-
-.container-game__gamepad-boat {
+.item-in {
     position: absolute;
-    left: 51%;
-    top: 46%;
-    width: 400px;
-    height: auto;
-    cursor: pointer;
+    top: 420px;
+    left: 1100px;
 }
 
-.container-game__gamepad-boat:hover {
-    cursor: pointer;
-    filter: brightness(110%);
-}
-
-.container-game__gamepad-images-wolf-element {
+.wolf {
     position: absolute;
     left: 78%;
     top: 45%;
 }
 
-.container-game__gamepad-images-sheep-element {
+.sheep {
     position: absolute;
-    left: 85%;
+    left: 84%;
     top: 52%;
+    z-index: 1;
 }
 
-.container-game__gamepad-images-cabbage-element {
+.cabbage {
     position: absolute;
-    left: 90%;
+    left: 85%;
     top: 70%;
 }
 
-.container-game__gamepad-images-wolf {
-    cursor: pointer;
-    pointer-events: stroke;
-}
-
-.container-game__gamepad-images-sheep {
-    width: 150px;
-    height: auto;
-    cursor: pointer;
-    pointer-events: stroke;
-}
-
-.container-game__gamepad-images-cabbage {
-    cursor: pointer;
-    pointer-events: stroke;
-}
-
-.container-game__gamepad-images-wolf:hover {
+.boat:hover,
+.wolf:hover,
+.sheep:hover,
+.cabbage:hover {
     cursor: pointer;
     filter: brightness(110%);
 }
 
-.container-game__gamepad-images-sheep:hover {
-    cursor: pointer;
-    filter: brightness(110%);
+#div3 {
+    position: relative;
 }
 
-.container-game__gamepad-images-cabbage:hover {
-    cursor: pointer;
-    filter: brightness(110%);
+#div3 img{
+    transform: scaleX(-1);
 }
 
-.swith-off {
-    display: none;
+#div3 img.wolf {
+    padding-right: 100px;
 }
 
-.swith-on {
-    display: block;
-}
 
-/* Animation */
-/* .myAnimation {
-    animation-name: move;
-    animation-duration: 6s;
-    animation-fill-mode: forwards;
-}
 
-@keyframes move {
-    from {
-        transform: translate(735px, 362px);
-    }
 
-    to {
-        transform: translate(130px, 550px);
-    }
-} */
-
-.myAnimation {
-    animation-name: move;
-    animation-duration: 5s;
-    animation-fill-mode: forwards;
-}
-
-.myReverseAnimation {
-    animation-name: move-reverse;
-    animation-duration: 5s;
-    animation-fill-mode: forwards;
-}
-
-@keyframes move {
-    from {
-        transform: translate(735px, 362px);
-    }
-
-    to {
-        transform: translate(130px, 550px);
-    }
-}
-
-@keyframes move-reverse {
-    from {
-        transform: translate(130px, 550px);
-    }
-
-    to {
-        transform: translate(735px, 362px);
-    }
-}
