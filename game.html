@@ -18,12 +18,27 @@
             </div>
             <div id="div2" class="item-in"></div>
         </div>
-        <div class="items" data-side="right">
+        <div id="divId" class="items">
             <img class="wolf" src="images/wolf.png" alt="Wolf">
             <img class="sheep" src="images/sheep2.png" alt="Sheep">
             <img class="cabbage" src="images/cabbage2.png" alt="Cabbage">
         </div>
-        <div id="div3" class="left-side-items" data-side="left"></div>
+        <div id="div3" class="left-side-items"></div>
+
+        <div class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <p>GAME OVER (Click on the cross to try again!)</p>
+            </div>
+        </div>
+
+        <div class="modal-win">
+            <div class="modal-content">
+                <span id="closeBtn" class="close">&times;</span>
+                <p>CONGRATS YOU WIN (Click on the cross to try again!)</p>
+            </div>
+        </div>
+
     </section>
     <script src="game.js"></script>
 </body>
