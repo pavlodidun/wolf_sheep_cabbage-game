@@ -59,3 +59,5 @@ div3.addEventListener('click', (event) => {
         transport.appendChild(image);
     }
 });
+
+// Rules
